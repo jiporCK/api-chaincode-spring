@@ -1,0 +1,5 @@
+up:
+    bash network.sh up
+
+down:
+    bash network.sh down 

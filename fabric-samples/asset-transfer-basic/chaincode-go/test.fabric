@@ -1,0 +1,28 @@
+[
+    {
+        "invoke": "InitLedger",
+        "args": []
+    },
+    {
+        "query": "GetAllAssets",
+        "args": []
+    },
+    {
+        "invoke": "CreateAsset",
+        "args": [
+            "asset22", "Blue", 9, "Chipor", 900
+        ]
+    },
+    {
+        "query": "ReadAsset",
+        "args": [
+            "asset22"
+        ]
+    },
+    {
+        "query": "AssetExists",
+        "args": [
+            "asset22"
+        ]
+    }
+]
