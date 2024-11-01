@@ -80,4 +80,18 @@ public class ChaincodeService {
     private String generateAssetId() {
         return "asset" + Instant.now().toEpochMilli();
     }
+
+    public void deleteAsset(String id) {
+        try {
+
+            byte[] result = contract.submitTransaction("DeleteAsset", id);
+
+            prettyJson(result);
+
+        } catch (Exception e) {
+
+            throw new RuntimeException("Failed to delete asset: " + e.getMessage(), e);
+
+        }
+    }
 }
