@@ -1,4 +1,4 @@
-```
+```bash
 http POST :9090/api/v1/init
 
 http :9090/api/v1/assets/all
